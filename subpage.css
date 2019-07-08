@@ -1,0 +1,392 @@
+body {
+    background:url(fill.png) repeat;
+    margin:0;
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate{
+    from {background-position:0 0;}
+    to{background-position:-100% 0;}
+}
+
+#wrapper {
+    position: relative;
+}
+
+#TopMenu {
+    z-index:2;
+    position:relative;
+    background-color:black;
+    width: 100%;
+    height: 150px;
+}
+
+#BannerLine {
+    height: 10px;
+    width: 80%;
+    left: 10%;
+    bottom: 0px;
+    background: url(fill.png) repeat;
+    animation: animate 15s linear infinite;
+    position: absolute;
+}
+main {
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: white;
+    width: 100%;
+    position: relative;
+}
+
+/*----------------- Slider---------------*/ 
+#slider { margin:0px 100px 0px 100px; overflow: hidden; }
+    #slider figure img, img1, img2, img3, img4 {
+        width: 20%;
+        float: left;
+    }
+#slider figure {position:relative; display:block; width:500%; height:250px; max-height:50%;margin:0 auto;left:0; animation: 20s slider infinite;}
+.SlideImage {
+    height: 300px;
+    width: 500px;
+}
+
+     @keyframes slider {
+	0% {left:0;}
+	20% {left:0;}
+	25% {left: -100%;}
+	45% {left: -100%;}
+	50% {left: -200%;}
+	70% {left: -200%;}
+	75% {left: -300%;}
+	95% {left: -300%;}
+	100% {left: -400%;}
+    }
+
+/*----------------Top Menu setup (Logo Banner nav)--------------*/
+
+#logo {
+    background-image: url(TransparentLogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 15px;
+    left: 5%;
+}
+
+nav {
+    position:absolute;
+    top:10%;
+    right:5%;
+}
+
+    nav a {
+        /*display:inline;*/
+        font-size: 25px;
+        font-family:'Segoe UI';
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+nav a:hover{
+    opacity:.5;
+}
+
+/*----------------------Top title------------------------*/
+
+h1 { 
+    clear: both;
+    text-align: center;
+    font-size: 50px;
+    font-family:Arial;
+    margin:auto;
+    padding-top:1%;
+    width: 300px;
+    height: 70px;
+}
+    
+/*----------Below are the design AFTER Slider-------------*/
+
+.section {
+    height:50px;
+    width:auto;
+}
+
+
+h2 { /*second top title (eg. General Information*/
+    text-align: left;
+    font-size: 80px;
+    background-color: white;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin: auto;
+    font-family:Helvetica;
+    width: 800px;
+    height: 60px;
+}
+
+#IntroContent{
+    width:auto;
+    height:300px;
+    margin:60px 6.7%;
+    position:relative;
+}
+
+#IntroPic {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 65%;
+}
+
+#IntroWords {
+    background-color: white;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    width:30%;
+}
+
+#vl{ /*Vertical Break Line (consider it as <hr> vertically) (from W3C School)*/
+    border-left-color:grey;
+    border-left-width:3px;
+    border-left-style:solid;
+    height:280px;
+    top:10px;
+    left:67.5%;
+    position:absolute;
+}
+
+.GeneralContent {
+    width:auto;
+    height:300px;
+    margin:10px 6.7%;
+    position:relative;
+}
+    
+#GeneralPic1{ /*IMPORTANT! But can igrone this*/
+    top:0;
+    bottom:0;
+    left:0;
+    width:40%;
+    position:absolute;
+
+}
+
+#GeneralInfo1 { /*Boxes*/
+    background-color: white;
+    position:absolute;
+    top:0px;
+    right:0;
+    bottom:0;
+    left:41%;
+    height: auto;
+    width:auto;
+}
+
+#GeneralPic2 {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    position: absolute;
+}
+
+#GeneralInfo2 {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right:41%;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: auto;
+}
+
+h3 {
+    clear: left;
+    text-align: center;
+    font-size: 20px;
+    font-family:'Segoe UI';
+    color:black;
+    margin: auto;
+    padding-top: 20px;
+    width: 300px;
+    height: 30px;
+}
+
+/*---------------Product starts here----------------------*/
+.ProductContainer {
+    width: auto;
+    margin: 0 6.7%;
+    position: relative;
+    padding:2%;
+}
+
+.RoundContainer{
+    display:inline-block;
+    margin:3%;
+    position:relative;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background-color:aqua;
+    border:2px solid purple;
+    overflow:hidden;
+}
+
+input {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    left: 125px;
+    outline: none;
+    z-index: 10;
+    opacity:0;
+}
+
+.Toggle {
+    position: absolute;
+    bottom: 30px;
+    left: 123px;
+    pointer-events: none;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 50px;
+    width: 50px;
+    z-index: 10;
+    transition: 0.5s;
+    box-shadow: 0 0 0 0px white;
+}
+
+input:hover ~ .Toggle{
+    bottom:45px;
+}
+
+input:checked {
+    transform: translate(0,-225px)
+}
+
+input:checked ~ .Toggle {
+    background-color:black;
+    border:5px solid black;
+    box-shadow: 0 0 0 300px white;
+    width: 100px;
+    left: 97px;
+    transform: translate(0,-235px)
+}
+
+input:checked:hover ~ .Toggle {
+    transform: translate(0,-215px)
+}
+
+.RoundImage{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:9;
+}
+.RoundContent {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 11;
+    height: 250px;
+    width: auto;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+input:checked ~ .RoundContent{
+    opacity:1;
+    transition-delay:0.5s;
+}
+
+.RoundContent h3 {
+    background-color:none;
+    color:black;
+    font-size:25px;
+    text-align:center;
+    padding-top:5px;
+}
+
+.RoundContent p{
+    font-size:15px;
+    color:black;
+    text-align:center;
+}
+/*Parallex*/
+.ParallexContainer {
+    padding:25px 0;
+    width: auto;
+    height:250px;
+    margin: 10px 6.7%;
+    position: relative;
+}
+
+/*-----------------Review starts here-------------------*/
+
+.ReviewContainer {
+    width: auto;
+    height: auto;
+    margin: 10px 6.7%;
+    position: relative;
+}
+
+.EachReviewContent { /*Brooo dont kill me if you see this hahaha*/
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-bottom:30px;
+}
+
+.Comment { /*dont kill me haha*/
+    position: relative;
+    font-size: 20px;
+    background-color: #AAAAAA;
+    border: 30px solid white;
+    width: auto;
+    height: 250px;
+}
+
+.ReviewContent { /*simpan your pisau*/
+    border:3px solid black;
+}
+
+.Comment img { /*IMPORTANT*/
+    width: 200px;
+    height: 200px;
+    border: 20px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 3%;
+}
+
+.Comment p{
+    font-family:Calibri;
+}
+
+footer {
+    height:200px;
+    width:100%;
+    background-color:white;
+    text-align:center;
+    padding-top:100px;
+    border-top:3px solid  black;
+}
+
+p{
+    font-family:Arial;
+    color:black;
+    text-align:center;
+}
