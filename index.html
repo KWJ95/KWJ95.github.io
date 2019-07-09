@@ -30,11 +30,14 @@
         #BackgroundImage {
             background-image: url(BubbleTeaWallpaper.jpg);
             background-repeat: repeat-x;
+            display: block;
             width: 100%;
-            height:100%;            
-            position:absolute;
+            height: 100%;
+            position: absolute;
             top:0;
-            background-size:contain;
+            background-size:cover;
+            /*border: 3px solid red;*/
+            margin: none;
         }
 
         a:hover{
@@ -194,18 +197,18 @@
                 border-right: none;
                 border-bottom: 2px solid lightgrey; 
             }
-            img{
-                height: 70%;
-                width: auto;
+            #BackgroundImage{
+            	max-height: 100%;
             }
             #logo{
             	height: 35%;
             	width: 35%;
             	background-size: contain;
             }
-            #BackgroundImage{
-                max-height: 60%;
-            }
+            #Align{
+        		margin-bottom: -100%;
+        		position: relative;
+        	}
             #Name{
                 font-size: 300%;
                 top: 40%;
@@ -217,36 +220,41 @@
             }
         }
 
+        @media only screen and (max-width: 768px){
+        	#logo{
+        		height: 15%;
+        		width: 15%;
+        	}
+        }
+
     </style>
 </head>
 
 <body>
-
-	    <div id="BackgroundImage">
-	        <a id="logo" href="subpage.html"> </a>
-	        <div class="d-flex justify-content-start">
-		        <nav>
-		        	<ul>
-		        		<li><a href="#.html">Daboba</a></li>
-			            <li><a href="#.html">Koi thé</a></li>
-			            <li><a href="#.html">Royal Tea</a></li>
-			            <li><a href="#.html">The Alley</a></li>
-		            </ul>
-		        </nav>
-		    </div>
-	        <div id="Name">
-	            <span>A Moment for </span> <br />
-	            <span>Boba Drinks!</span>
-	        </div>
+<!-- <div class="container-fluid"> -->
+<div id="BackgroundImage">
+        <a id="logo" href="subpage.html"></a>
+        <div class="d-flex justify-content-end">
+	        <nav>
+	        	<ul>
+	        		<li><a href="#.html">Daboba</a></li>
+		            <li><a href="#.html">Koi thé</a></li>
+		            <li><a href="#.html">Royal Tea</a></li>
+		            <li><a href="#.html">The Alley</a></li>
+	            </ul>
+	        </nav>
 	    </div>
+        <div id="Name">
+            <span>A Moment for </span> <br />
+            <span>Boba Drinks!</span>
+        </div>
+    </div>
 
+<main>
 
-    <main>
-
-    <div class="container-fluid">
-        
+    <div class="container-fluid">     
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 pt-2">
                 <h1 class="display-3 font-weight-bold">Introduction</h1>
                 <p>
                     The name of our website will be called “A Moment for Boba Drinks!”. The purpose of it is to help the brands of bubble tea to increase their sales as well as introducing few of the top bubble tea brands that are available in Malaysia.
@@ -274,7 +282,7 @@
                 </p>
             </div>
             <div class="col-md-6 d-flex">
-                <img src="BubbleMilkTeaInfo.jpg" class="mx-auto d-sm-block" alt="BubbleInfo" />
+                <img src="BubbleMilkTeaInfo.jpg" class="img-fluid mx-auto d-block pt-3" width="80%" alt="BubbleInfo" />
             </div>
         </div>
     </div>
@@ -282,43 +290,46 @@
         <hr style="clear:both; width:80%; position:relative;top:30px;" />
 
     <footer>
-        <div class="container-fluid">
-            <br />
-            <div class="ml-4">
-                <p style="font-weight:500; text-align:left;"> Recommended Reading </p>
-                <a href="#">DABOBA</a><br>
-                <a href="#">ROYALTEA</a><br>
-                <a href="#">KOI</a><br>
-                <a href="#">THE ALLEY</a>
-            </div>
-            <br />
+    <div class="container-fluid">
+    	
+	        <br />
+	        <div class="ml-4">
+	            <p style="font-weight:500; text-align:left;"> Recommended Reading </p>
+	            <a href="#">DABOBA</a><br>
+	            <a href="#">ROYALTEA</a><br>
+	            <a href="#">KOI</a><br>
+	            <a href="#">THE ALLEY</a>
+	        </div>
+	        <br />
 
-            <form class="form-inline">
-                <div class="form-group mb-2">
-                    <label class="mx-4 col-form-label" style="font-family:'Segoe UI';font-weight:100;">Subscribe to us!</label>
-                </div>
-                <div class="form-group mx-sm-3 mb-2">
-                    <input class="form-control" type="email" name="Address" id="Address" placeholder="Email" style="height:30px" />
-                </div>
-                <div class="form-group mb-2">
-                    <input class="mb-2" type="image" src="Mail.png" alt="mail" width="40" height="35" style="position:absolute;" />
-                </div>               
-            </form>
+	        <form class="form-inline">
+	            <div class="form-group mb-2">
+	                <label class="mx-4 col-form-label" style="font-family:'Segoe UI';font-weight:100;">Subscribe to us!</label>
+	            </div>
+	            <div class="form-group mx-sm-3 mb-2">
+	                <input class="form-control" type="email" name="Address" id="Address" placeholder="Email" style="height:30px" />
+	            </div>
+	            <div class="form-group mb-2">
+	                <input class="mb-2" type="image" src="Mail.png" alt="mail" width="40" height="35" style="position:absolute;" />
+	            </div>               
+	        </form>
 
-            <div id="Disclaimer">
-                <p>Copyright 2019 A moment for Boba drinks! All Rights Reserved.</p>
-                <p>
-                    Disclaimer: We are not affiliated with any of the Bubble Tea brands mentioned in this website.
-                    We just want to share the latest information about Bubble Tea for free because we love Bubble Tea just like you!
-                    We try our best to obtain as accurate information as possible from offical sources so if there's any information with issues, please do get in touch with us, we are happy to accomodate and work together!
-                </p>
-            </div>
+	        <div id="Disclaimer">
+	            <p>Copyright 2019 A moment for Boba drinks! All Rights Reserved.</p>
+	            <p>
+	                Disclaimer: We are not affiliated with any of the Bubble Tea brands mentioned in this website.
+	                We just want to share the latest information about Bubble Tea for free because we love Bubble Tea just like you!
+	                We try our best to obtain as accurate information as possible from offical sources so if there's any information with issues, please do get in touch with us, we are happy to accomodate and work together!
+	            </p>
+	        </div>
 
-            <div id="BackTop">
-                <a href="#logo"> ^ </a>
-            </div>
-        </div>
+	        <div id="BackTop">
+	            <a href="#logo"> ^ </a>
+	        </div>
+        
+    </div>
     </footer>
+<!-- </div> -->
 </main>
 </body>
 </html>
