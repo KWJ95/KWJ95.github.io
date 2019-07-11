@@ -140,8 +140,9 @@ h3 {
 }
 
 #IntroWords {
-    background: url(fill.png) repeat;
-    animation: animate 15s linear infinite;
+    /*background: url(fill.png) repeat;
+    animation: animate 15s linear infinite;*/
+	background-color:black;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -508,15 +509,20 @@ html {
    }
 
    #IntroPic{
-       float:left;
+       width:100%;
+	   height:300px;
    }
 
    #IntroWords{
-       float:left;
+       height:300px;
+	   width:100px;
+	   top:300px;
+	   left:0;
    }
 
    #IntroContent{
-       position:absolute;
+       position:relative;
+	height:600px;	
    }
 
    .RoundRectangle{
@@ -549,10 +555,6 @@ html {
         top: 300px;
         left: 0;
         width: 100%;
-    }
-
-    .RoundLogo{
-        position:relative;
     }
 
     #vl {
