@@ -143,6 +143,7 @@ h3 {
     /*background: url(fill.png) repeat;
     animation: animate 15s linear infinite;*/
 	background-color:#000;
+	border:2px solid red;
     position: absolute;
     top: 0;
     bottom: 0;
