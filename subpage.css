@@ -514,7 +514,7 @@ html {
 
    #IntroWords{
        height:300px;
-	   width:100px;
+	   width:100%;
 	   top:300px;
 	   left:0;
    }
