@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI';
+        }
+
+        #logo {
+            background-image: url(TransparentLogo.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 200px;
+            top: 10px;
+            left:15px;
+            position: absolute;
+        }
+
+        #BackgroundImage {
+            background-image: url(BubbleTeaWallpaper.jpg);
+            background-repeat: repeat-x;
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            background-size:cover;
+            margin: none;
+        }
+
+        a:hover{
+            text-decoration: none;
+            color: white;
+            opacity: .5;
+        }
+
+        nav {
+            position: absolute;
+            top: 3%;
+            right: 3%;
+        }
+
+        	nav ul{
+        		list-style-type: none;
+        		margin: 0;
+        		padding: 0;
+        	}
+
+        	nav li{
+        		display: inline-block;
+                text-align: center;
+        		border-right: 2px solid lightgrey;
+        		padding: 0.5em;
+        	}
+
+            nav a {
+                font-size: 25px;
+                font-family: Calibri;
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+            }
+
+                nav a:hover {
+                    opacity: .5;
+                }
+
+           #logo:hover{
+               opacity:.5;
+           }
+
+    #Name{/*A moment for boba drinks*/
+        position:absolute;
+        top:30%;
+        left:18%;
+        animation:PopName;
+        animation-duration:0.8s;
+        animation-timing-function:ease-in-out;
+        color:white;
+        font-size:813%;
+        font-weight:bold;
+        font-family:'Segoe Script';
+    }
+
+    @keyframes PopName{/*pop up*/
+        0%{top:22%; opacity:.2;}
+        25%{top:24%; opacity:.4;}
+        50%{top:26%; opacity:.6;}
+        75%{top:28%; opacity:.8;}
+        100%{top:30%; opacity:1;}
+
+    }
+
+        main {
+            position: absolute;
+            top: 100%;
+        }  
+
+        .IntroContainer{
+            position:relative;
+            height:100%;
+            width:100%;
+        }
+
+        .OurContainer {
+            width: 40%;
+            margin-top: 5%;
+            left: 5%;
+            position: relative;
+            background-color: white;
+        }
+
+        .OurTitle {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 500%;
+            font-weight: bold;
+            letter-spacing: -1px;
+            line-height: 0;
+            padding: 0 3% 3% 0;
+        }
+
+        .BubbleInfoPic {
+            position: relative;
+            float: right;
+            height: 225%;
+            width: 45%;
+            right: 5%;
+            margin-top: 0;
+        }
+
+        /*-------------------------------Footer-------------------------------*/
+
+        footer {
+            display: block;
+            font-family: 'Segoe UI'; 
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            height:400px;
+        }
+
+        footer p,a{
+            font-family: 'Segoe UI';
+            font-weight:100;
+            text-decoration:none;
+            color:white;
+            text-align:center;
+        }
+
+        #Disclaimer {
+            padding: 30px 50px 0;
+            font-family: 'Segoe UI';
+            font-weight: 100;
+            text-decoration: none;
+            font-size:small;
+            color: white;
+            text-align: center;
+        }
+
+        #BackTop a{
+            border:5px solid white;
+            border-radius:50%;
+            color:white;
+            text-align:center; 
+            font-family:cursive;
+            font-size:55px;
+            height:50px;
+            width:50px;
+            position:absolute;
+            bottom:100px;
+            right:10px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media only screen and (max-width: 1068px){
+            .container{
+                max-width: 970px;
+            }
+        	nav li{
+                display: block;
+                float: none;
+                border-right: none;
+                border-bottom: 2px solid lightgrey; 
+            }
+            #BackgroundImage{
+            	max-height: 100%;
+            }
+            #logo{
+            	background-size: contain;
+            }
+            #Align{
+        		margin-bottom: -100%;
+        		position: relative;
+        	}
+            #Name{
+                font-size: 300%;
+                top: 40%;
+                left: 30%;
+            }
+            #Disclaimer{
+                margin: 0 50px;
+                font-size: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 768px){
+/*        	#logo{
+        		height: 15%;
+        		width: 15%;
+        	}*/
+        }
+
+    </style>
+</head>
+
+<body>
+<!-- <div class="container-fluid"> -->
+<div id="BackgroundImage">
+        <a id="logo" href="index.html"></a>
+        <div class="d-flex justify-content-end">
+	        <nav>
+	        	<ul>
+	        		<li><a href="GongCha.html">Gong Cha</a></li>
+		            <li><a href="KOI.html">Koi thé</a></li>
+		            <li><a href="RoyalTea.html">Royaltea</a></li>
+		            <li><a href="TheAlley.html">The Alley</a>></li>
+                    <li><a href="ReviewForm.html">Reviews</a></li>
+	            </ul>
+	        </nav>
+	    </div>
+        <div id="Name">
+            <span>A Moment for </span> <br />
+            <span>Boba Drinks!</span>
+        </div>
+    </div>
+
+<main>
+
+    <div class="container-fluid">     
+        <div class="row">
+            <div class="col-md-6 pt-2">
+                <h1 class="display-3 font-weight-bold">Introduction</h1>
+                <p>
+                    The name of our website will be called “A Moment for Boba Drinks!”. The purpose of it is to help the brands of bubble tea to increase their sales as well as introducing few of the top bubble tea brands that are available in Malaysia.
+                    <br />So, what our website focuses on is that we provide readers with detailed information and reviews about the top brands, menus with the list of prices.
+                    Therefore, it helps the readers to be more efficient as all the details are all on our website,
+                    making them more accessible in to getting the information.
+                    <br />Since there are too many brands which might cause one to be indecisive when craving for the bubble tea, our website will guide the readers through so that readers will know which brand of the bubble tea to go for to suit their needs or they can compare the brands available on our website.
+                </p>
+            
+                <h1 class="display-3 font-weight-bold">Our Story</h1>
+                <p>
+                    People these days tend to feel the need to follow trends with the attempt of trying to fit in. One of the current trends is the bubble tea.
+                    <br />Originated from Taiwan, bubble tea is a mixture of cooked pearls which are made from tapioca with milk and flavored tea.
+                    <br />It is favored by everyone due to the chewiness of the pearls and the flavor of the tea.
+                    There has been a tremendous increase in the number of bubble tea shops over the past few years
+                    Therefore, consuming the bubble tea has become part of the daily routine for some of us.
+                    <br />So, this is where our website steps in.
+                </p>
+            
+                <h1 class="display-3 font-weight-bold">Our Goal</h1>
+                <p>
+                    In terms of what we want to accomplish on our website, we want to enlighten the readers regarding about the history of the bubble tea and how it’s made to help the readers to increase their knowledge.
+                    <br />For instance, our website will indicate the background of each of the brands and how they became successful.
+                    <br />By gathering all this information, it will also help to inspire entrepreneurs that are on our website with the aim of creating their own brands of bubble tea.
+                </p>
+            </div>
+            <div class="col-md-6 d-flex">
+                <img src="BubbleMilkTeaInfo.jpg" class="img-fluid mx-auto d-block pt-3" width="80%" alt="BubbleInfo" />
+            </div>
+        </div>
+    </div>
+
+        <hr style="clear:both; width:80%; position:relative;top:30px;" />
+
+    <footer>
+    <div class="container-fluid">
+    	
+	        <br />
+            <div class="ml-4">
+                <p style="font-weight:500; text-align:left;"> Recommended Reading </p>
+                <a href="GongCha.html">Gong Cha</a><br />
+                <a href="KOI.html">Koi thé</a><br />
+                <a href="RoyalTea.html">Royal Tea</a><br />
+                <a href="TheAlley.html">The Alley</a><br />
+                <a href="ReviewForm.html">Reviews</a><br />
+            </div>
+	        <br />
+
+	        <form class="form-inline">
+	            <div class="form-group mb-2">
+	                <label class="mx-4 col-form-label" style="font-family:'Segoe UI';font-weight:100;">Subscribe to us!</label>
+	            </div>
+	            <div class="form-group mx-sm-3 mb-2">
+	                <input class="form-control" type="email" name="Address" id="Address" placeholder="Email" style="height:30px" />
+	            </div>
+	            <div class="form-group mb-2">
+	                <input type="image" src="Mail.png" alt="mail" width="40" height="35" style="position:relative;" />
+	            </div>               
+	        </form>
+
+	        <div id="Disclaimer">
+	            <p>Copyright 2019 A moment for Boba drinks! All Rights Reserved.</p>
+	            <p>
+	                Disclaimer: We are not affiliated with any of the Bubble Tea brands mentioned in this website.
+	                We just want to share the latest information about Bubble Tea for free because we love Bubble Tea just like you!
+	                We try our best to obtain as accurate information as possible from offical sources so if there's any information with issues, please do get in touch with us, we are happy to accomodate and work together!
+	            </p>
+	        </div>
+
+	        <div id="BackTop">
+	            <a href="#logo"> ^ </a>
+	        </div>
+        
+    </div>
+    </footer>
+<!-- </div> -->
+</main>
+</body>
+</html>
