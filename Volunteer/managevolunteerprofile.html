@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<style>
+		.vertical-space {height: 25px;}
+		.button-rounded {border-radius: 5px;}
+	</style>
+	<title>Manage Volunteer Profile</title>
+</head>
+<body class="container">
+	<h1 class="container text-center mb-3 py-4">Manage Profile</h1>
+	<div class="vertical-space"></div>
+
+	<div class="container mb-3">
+		<form class="row g-3">
+			<div class="col-md-7">
+				<div class="row">
+					<div class="col-md-5 mb-3">
+						<label class="form-label">Username:</label>
+						<input class="form-control" type="" name="">
+					</div>
+					<div class="col-md-1"></div>
+					<div class="col-md-5 mb-3">
+						<label class="form-label">Password:</label>
+						<input class="form-control" type="" name="">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="showPw">
+							<label class="form-check-label" for="showPw">Show Password</label>
+						</div>
+					</div>
+					<div class="col-md-1"></div>
+					<div class="col-md-5 mb-3">
+						<label class="form-label">Name:</label>
+						<input class="form-control" type="" name="">
+					</div>
+					<div class="col-md-1"></div>
+					<div class="col-md-5 mb-3">
+						<label class="form-label">Phone Number:</label>
+						<input class="form-control" type="" name="">
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+			</div>
+
+			<div class="col-md-5 mb-3">
+				<div class="form-check pl-md-3">
+					<input class="form-check-input" type="checkbox" id="upDoc">
+					<label class="form-check-label" for="upDoc">Upload Document</label>
+				</div>
+				<div class="border border-dark primary p-md-3" id="documentBorder">
+					<label class="form-label" for="documentType">Document Type:</label>
+					<select class="form-select mb-3" id="documentType">
+						<option selected>Select Document Type</option>
+						<option value="passport">Passport</option>
+						<option value="travelVisa">Travel Visa</option>
+						<option value="workPermit">Work Permit</option>
+					</select>
+					<label class="form-label" for="expiryDate">Expiry Date:</label>
+					<div class="input-group mb-3">
+						<label class="control-label input-group-text" for="expiryDatePicker">Select a date</label>
+						<input type="text" class="form-control" id="expiryDatePicker" name="expiryDatePicker" placeholder="DD/MM/YYYY" />
+					</div>
+					<label class="form-label" for="fileUpload">File:</label>
+					<div class="input-group mb-3">
+						<input type="file" class="form-control" id="fileUpload">
+					</div>
+				</div>				
+			</div>
+
+			<div class="col-12 text-center">
+				<button class="p-md-2 mx-md-2 button-rounded">Save Change</button>
+				<button class="p-md-2 mx-md-2 button-rounded">Reset</button>
+			</div>
+		</form>
+		
+	</div>
+
+	<div class="container text-center">
+		<button class="px-md-5 button-rounded">Back</button>	
+	</div>
+
+	
+
+	<!-- Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+	<!-- Include jQuery -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<!-- Include Date Range Picker -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+	<script>
+		$(document).ready(function(){
+	      var date_input=$('input[name="expiryDatePicker"]'); //our date input has the name "expiryDatePicker"
+	      var container= $('input').length<0 ? $('input.expiryDatePicker').parent() : "body";
+	      var options={
+	        format: 'dd/mm/yyyy',
+	        container: container,
+	        orientation: "top right",
+	        todayHighlight: true,
+	        autoclose: true,
+	      };
+      	date_input.datepicker(options);
+   		 })
+	</script>
+
+</body>
+</html>
