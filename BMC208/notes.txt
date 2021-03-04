@@ -1,0 +1,4 @@
+Task:
+Global button design
+Class initializing
+Layout
