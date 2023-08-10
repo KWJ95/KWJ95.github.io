@@ -28,7 +28,7 @@ jobs:
 
       - name: build
         env:
-          # BASE_PATH: '/kwj95.github.io'
+          # BASE_PATH: '/kwj95.github.io' (left empty because double domain URL)
           BASE_PATH: ''
         run: |
           npm run build
