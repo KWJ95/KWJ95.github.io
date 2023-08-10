@@ -28,7 +28,7 @@ jobs:
 
     - name: build
     env:
-      BASE_PATH: '/KWJ95.github.io'
+      BASE_PATH: '/kwj95.github.io'
     run: |
       npm run build
       touch build/.nojekyll
