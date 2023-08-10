@@ -9,6 +9,14 @@
 
 <ul>
     {#each data.skills as { talent, exp}}
-        <li>{talent} for {exp} { exp > '1' ? "years" : "year" }</li>
+        <li>{talent} for {exp} { exp > '1' ? "months" : "month" }</li>
+    {/each}
+</ul>
+
+<p>Here are my education level history:</p>
+
+<ul>
+    {#each data.educations as { school, year}}
+        <li>{school} ({year})</li>
     {/each}
 </ul>
