@@ -1,5 +1,6 @@
 <script>
 	import Card from './Card.svelte';
+	import MasonryGallery from './MasonryGallery.svelte';
 	import { time, elapsed } from './stores';
 
 	const timeZones = ['GMT', 'Europe/London', 'Asia/Tokyo', 'Asia/Singapore'];
@@ -26,3 +27,8 @@
 </p>
 
 <Card />
+
+<hr class="my-5"/>
+<h1 class="h1">Demo for masonry gallery</h1>
+<br>
+<MasonryGallery/>

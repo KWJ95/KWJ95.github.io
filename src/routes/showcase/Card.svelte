@@ -66,6 +66,7 @@
 
 	.front {
 		/* background: url(./svelte-logo.svg) no-repeat 5em 5em, url(./svelte-logo.svg) no-repeat calc(100% - 5em) calc(100% - 5em); */
+		background-color: aliceblue;
 		background-size: 8em 8em, 8em 8em;
 	}
 
@@ -75,7 +76,8 @@
 
 	.symbol {
 		font-size: 30em;
-		color: var(--fg-1);
+		/* color: var(--fg-1); */
+		color: black;
 	}
 
 	.pattern {
