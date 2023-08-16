@@ -26,23 +26,34 @@
 		head: ['Current Time', 'Country/Timezone'],
 		body: tableMapperValues(timeZonesTable, ['t', 'country'])
 	};
-
-	console.table(timeZones);
 </script>
 
 <!-- <h1>The time is {formatter.format($time)}</h1> -->
-<table class="table-auto">
-	<thead>
+<table class="table-auto border-solid  my-3">
+	<caption class="caption-top">Pure tailwind table</caption>
+	<thead class="table-head border rounded bg-slate-300 dark:bg-slate-800">
 		<tr>
-			<th>Current Time</th>
-			<th>Country/Timezone</th>
+			<th
+				class="border dark:border-slate-400 font-medium p-4 pl-8 pt-3 pb-3 text-slate-500 dark:text-slate-200 text-left"
+				>Current Time</th
+			>
+			<th
+				class="border dark:border-slate-400 font-medium p-4 pr-8 pt-3 pb-3 text-slate-500 dark:text-slate-200 text-left"
+				>Country/Timezone</th
+			>
 		</tr>
 	</thead>
-	<tbody>
+	<tbody class="bg-white dark:bg-slate-600">
 		{#each timeZones as timeZone}
 			<tr>
-				<td>{formatter(timeZone).format($time)}</td>
-				<td>{timeZone}</td>
+				<td
+					class="border border-slate-200 dark:border-slate-400 p-4 pl-8 text-slate-500 dark:text-slate-200"
+					>{formatter(timeZone).format($time)}</td
+				>
+				<td
+					class="border border-slate-200 dark:border-slate-400 p-4 pr-8 text-slate-500 dark:text-slate-200"
+					>{timeZone}</td
+				>
 			</tr>
 		{/each}
 	</tbody>
@@ -54,10 +65,8 @@
 	{$elapsed}
 	{$elapsed === 1 ? 'second' : 'seconds'}
 </p>
-
-<Card />
-
 <hr class="my-5" />
-<h1 class="h1">Demo for masonry gallery</h1>
-<br />
+<h1 class="h1 mb-5">Demo for masonry gallery</h1>
 <MasonryGallery />
+<hr class="my-5" />
+<Card />

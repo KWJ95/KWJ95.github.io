@@ -1,11 +1,13 @@
 <script>
+	import { fade } from 'svelte/transition';
+
 	export let data;
 </script>
 
 <h1 class="h1">About me</h1>
 <p class="my-6">Hello there, my name is Koo Wei Jie</p>
 
-<div class="card w-fit">
+<div class="card w-fit" in:fade|local>
 	<header class="card-header">Below are my technical skills and talents:</header>
     <hr/>
 	<ul class="list p-4">
@@ -15,7 +17,7 @@
 	</ul>
 </div>
 <hr class="mx-5 my-8"/>
-<div class="card w-fit">
+<div class="card w-fit" in:fade|local={{ delay: 400}}>
 	<header class="card-header">Here are my education level history:</header>
 	<hr/>
     <ul class="list p-4">
