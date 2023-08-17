@@ -49,7 +49,7 @@
 </div>
 <hr class="mx-5 my-8"/>
 <div class="card w-fit" in:fade|local={{ delay: 300}}>
-	<header class="card-header">Here are lists of hobbies</header>
+	<header class="card-header">Here are the lists of my hobbies and interests</header>
 	<hr/>
 	<dl class="list-dl p-4">
 		{#each data.hobbies as { act, desc }}
