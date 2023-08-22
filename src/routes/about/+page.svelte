@@ -26,7 +26,7 @@
 </script>
 
 <h1 class="h1" in:typewriter|local>About me</h1>
-<p class="my-6">Hello there, my name is Koo Wei Jie</p>
+<p class="my-6">A brief introduction about myself regarding education level, interests and skill sets.</p>
 
 <div class="card w-fit" in:fade|local>
 	<header class="card-header">Below are my technical skills and talents</header>
