@@ -30,6 +30,11 @@ export const skillsets = [
         remark: 'language'
     },
     {
+        talent: 'Python',
+        exp: '8',
+        remark: 'language'
+    },
+    {
         talent: 'C++',
         exp: '12',
         remark: 'language'
