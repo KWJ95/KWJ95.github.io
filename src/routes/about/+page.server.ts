@@ -5,7 +5,7 @@ export function load() {
     return {
         skills: skillsets.map((post) => ({
             talent: post.talent,
-            exp: post.exp
+            remark: post.remark
         })),
         educations: lists.map((list) => ({
             school: list.school,

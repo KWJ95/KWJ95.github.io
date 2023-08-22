@@ -7,6 +7,7 @@
 	import { page } from '$app/stores';
 	import { Modal } from '@skeletonlabs/skeleton';
 </script>
+
 <Modal />
 
 <TabGroup justify="justify-center" flex="flex-1 lg:flex-none">

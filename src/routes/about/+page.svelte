@@ -1,10 +1,9 @@
-<script>
+<script lang="ts">
 	import { fade } from 'svelte/transition';
 
 	export let data;
 
-	// @ts-ignore
-	function typewriter(node, { speed = 1 }) {
+	function typewriter(node: any, { speed = 1 }: undefined) {
 		const valid = node.childNodes.length === 1 && node.childNodes[0].nodeType === Node.TEXT_NODE;
 
 		if (!valid) {
@@ -16,8 +15,7 @@
 
 		return {
 			duration,
-			// @ts-ignore
-			tick: (t) => {
+			tick: (t: number) => {
 				const i = Math.trunc(text.length * t);
 				node.textContent = text.slice(0, i);
 			}
@@ -26,31 +24,42 @@
 </script>
 
 <h1 class="h1" in:typewriter|local>About me</h1>
-<p class="my-6">A brief introduction about myself regarding education level, interests and skill sets.</p>
+<p class="my-6">
+	A brief introduction about myself regarding education level, interests and skill sets.
+</p>
 
 <div class="card w-fit" in:fade|local>
 	<header class="card-header">Below are my technical skills and talents</header>
-    <hr/>
-	<ul class="list p-4">
+	<hr />
+	<p class="list p-4">
+		{#each data.skills as { talent, remark }}
+			<!-- svelte-ignore a11y-no-static-element-interactions -->
+			<span class="chip variant-filled-primary mr-4 tooltip">
+				{talent}
+				<span class="tooltiptext">{remark}</span>
+			</span>
+		{/each}
+	</p>
+	<!-- <ul class="list p-4">
 		{#each data.skills as { talent, exp }}
 			<li>{talent} for {exp} {exp > '1' ? 'months' : 'month'}</li>
 		{/each}
-	</ul>
+	</ul> -->
 </div>
-<hr class="mx-5 my-8"/>
-<div class="card w-fit" in:fade|local={{ delay: 250}}>
+<hr class="mx-5 my-8" />
+<div class="card w-fit" in:fade|local={{ delay: 250 }}>
 	<header class="card-header">Here are my education level history</header>
-	<hr/>
-    <ul class="list p-4">
+	<hr />
+	<ul class="list p-4">
 		{#each data.educations as { school, year }}
 			<li>{school} ({year})</li>
 		{/each}
 	</ul>
 </div>
-<hr class="mx-5 my-8"/>
-<div class="card w-fit" in:fade|local={{ delay: 300}}>
+<hr class="mx-5 my-8" />
+<div class="card w-fit" in:fade|local={{ delay: 300 }}>
 	<header class="card-header">Here are the lists of my hobbies and interests</header>
-	<hr/>
+	<hr />
 	<dl class="list-dl p-4">
 		{#each data.hobbies as { act, desc }}
 			<div>
@@ -62,4 +71,4 @@
 		{/each}
 	</dl>
 </div>
-<hr class="mx-5 my-8"/>
+<hr class="mx-5 my-8" />
