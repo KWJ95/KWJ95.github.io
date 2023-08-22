@@ -2,7 +2,7 @@
 	import { Avatar } from "@skeletonlabs/skeleton";
 
     export let data;
-    let headingSize = 32;
+    // let headingSize = 32;
 </script>
 
 <div class="container mx-auto mt-8">
@@ -10,9 +10,9 @@
         <h1 class="h1">Hi, my name is
             <span class="bg-gradient-to-br from-blue-500 to-cyan-300 bg-clip-text text-transparent box-decoration-clone">Jack Koo</span>
         </h1>
-        <span class="divider-vertical invisible md:h-{headingSize} md:visible"/>
+        <span class="divider-vertical invisible md:h-32 md:visible"/>
         <div class="grow md:grow-0 grid justify-center">
-            <Avatar src="#" initials="KWJ" width="w-{headingSize}" rounded="rounded-full" />
+            <Avatar src="#" initials="KWJ" width="w-32" rounded="rounded-full" />
         </div>
     </div>
     <br>
