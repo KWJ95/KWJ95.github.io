@@ -47,6 +47,8 @@
 		<div class="grid gap-4">
 			{#each imageRows as i}
 				<div>
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 					<img
 						class="h-auto max-w-full rounded-lg"
 						src="https://images.unsplash.com/photo-{i}&w=300&h=300&auto=format&fit=max"

@@ -30,7 +30,7 @@
 </script>
 
 <!-- <h1>The time is {formatter.format($time)}</h1> -->
-<div class="table-container w-[50%] justify-center">
+<div class="table-container w-[50%]">
 	<table class="table table-hover border-solid  my-3">
 		<!-- <caption class="caption-top">Pure tailwind table</caption> -->
 		<thead class="table-head border rounded bg-slate-300 dark:bg-slate-800">
