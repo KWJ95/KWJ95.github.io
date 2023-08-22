@@ -2,7 +2,6 @@
 	import { Avatar } from "@skeletonlabs/skeleton";
 
     export let data;
-    // let headingSize = 32;
 </script>
 
 <div class="container mx-auto mt-8">
@@ -22,6 +21,10 @@
     <p>Visit <a class="anchor" href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
     
     <p>Testing reactivity on static pages with DOM events</p>
+
+    <a href="/static/docs/my_resume(CV).docx" download="Koo_Wei_Jie_CV" type="button" class="btn btn-lg variant-filled my-5">
+        Get my CV
+    </a>
     
     <div class="logo-cloud grid-cols-1 lg:!grid-cols-3 gap-0.5 my-3">
         {#each data.externalLinks as links}
