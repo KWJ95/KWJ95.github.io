@@ -22,7 +22,7 @@
     
     <p>Testing reactivity on static pages with DOM events</p>
 
-    <a href="/static/docs/my_resume(CV).docx" download="Koo_Wei_Jie_CV" type="button" class="btn btn-lg variant-filled my-5">
+    <a href="/docs/my_resume(CV).docx" download="Koo_Wei_Jie_CV" type="button" class="btn btn-lg variant-filled my-5">
         Get my CV
     </a>
     
