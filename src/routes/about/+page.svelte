@@ -45,9 +45,9 @@
 		</header>
 		<hr />
 		<p class="list p-4">
-			{#each data.skills as { talent, remark, color }}
+			{#each data.skills as { talent, remark, variant }}
 				<!-- svelte-ignore a11y-no-static-element-interactions -->
-				<span class="chip variant-filled-{color} mr-4 tooltip">
+				<span class="chip {variant} mr-4 tooltip">
 					{talent}
 					<span class="tooltiptext">{remark}</span>
 				</span>

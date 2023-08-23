@@ -3,132 +3,132 @@ export const skillsets = [
         talent: 'Svelte',
         exp: '3',
         remark: 'front-end framework',
-        color: 'primary'
+        style: 'variant-filled-primary'
     },
     {
         talent: 'VueJS',
         exp: '2',
         remark: 'front-end framework',
-        color: 'primary'
+        style: 'variant-filled-primary'
     },
     {
         talent: 'NextJS',
         exp: '4',
         remark: 'front-end framework',
-        color: 'primary'
+        style: 'variant-filled-primary'
     },
     {
         talent: 'Angular',
         exp: '7',
         remark: 'framework',
-        color: 'primary'
+        style: 'variant-filled-primary'
     },
     {
         talent: 'PHP',
         exp: '16',
         remark: 'language',
-        color: 'success'
+        style: 'variant-filled-error'
     },
     {
         talent: 'HTML',
         exp: '16',
         remark: 'language',
-        color: 'success'
+        style: 'variant-filled-error'
     },
     {
         talent: 'CSS',
         exp: '16',
         remark: 'language',
-        color: 'success'
+        style: 'variant-filled-error'
     },
     {
         talent: 'JQuery',
         exp: '16',
         remark: 'language',
-        color: 'success'
+        style: 'variant-filled-error'
     },
     {
         talent: 'JavaScript',
         exp: '16',
         remark: 'language',
-        color: 'success'
+        style: 'variant-filled-error'
     },
     {
         talent: 'JAVA',
         exp: '16',
         remark: 'language',
-        color: 'success'
+        style: 'variant-filled-error'
     },
     {
         talent: 'Python',
         exp: '8',
         remark: 'language',
-        color: 'success'
+        style: 'variant-filled-error'
     },
     {
         talent: 'C++',
         exp: '12',
         remark: 'language',
-        color: 'success'
+        style: 'variant-filled-error'
     },
     {
         talent: 'C#',
         exp: '12',
         remark: 'language',
-        color: 'success'
+        style: 'variant-filled-error'
     },
     {
         talent: 'Docker',
         exp: '1',
         remark: 'package',
-        color: 'secondary'
+        style: 'variant-filled-secondary'
     },
     {
         talent: 'Git',
         exp: '1',
         remark: 'version control',
-        color: 'secondary'
+        style: 'variant-filled-secondary'
     },
     {
         talent: 'Postman',
         exp: '4',
         remark: 'API testing',
-        color: 'secondary'
+        style: 'variant-filled-secondary'
     },
     {
         talent: 'Cypress',
         exp: '4',
         remark: 'end-to-end testing',
-        color: 'secondary'
+        style: 'variant-filled-secondary'
     },{
         talent: 'Playwright',
         exp: '4',
         remark: 'end-to-end testing',
-        color: 'secondary'
+        style: 'variant-filled-secondary'
     },
     {
         talent: 'MongoDB',
         exp: '4',
         remark: 'document oriented database',
-        color: 'warning'
+        style: 'variant-filled-warning'
     },
     {
         talent: 'Pocketbase',
         exp: '4',
         remark: 'open-source database',
-        color: 'warning'
+        style: 'variant-filled-warning'
     },
     {
         talent: 'SQL',
         exp: '4',
         remark: 'structure query languange (database)',
-        color: 'warning'
+        style: 'variant-filled-warning'
     },
     {
         talent: 'Oracle',
         exp: '4',
         remark: 'database design',
-        color: 'warning'
+        style: 'variant-filled-warning'
     }
 ];
 
