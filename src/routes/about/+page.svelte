@@ -23,6 +23,12 @@
 	}
 </script>
 
+<head>
+    <meta 
+        name="about page"
+        content="A general outlook into the page owner skills, talents, and interests."/>
+</head>
+
 <div class="container mx-auto mt-8">
 	<h1
 		class="h1 bg-gradient-to-br from-blue-500 to-cyan-300 bg-clip-text text-transparent box-decoration-clone"
