@@ -10,6 +10,11 @@
 	const expYear = yearElapsed.toFixed(1);
 </script>
 
+<svelte:head>
+  <title>Koo Wei Jie's Portfolio</title>
+  <meta name="main page" content="Introduction page for the page owner as an software engineer with affiliate links." />
+</svelte:head>
+
 <div class="container mx-auto mt-8">
 	<div class="flex flex-col-reverse md:flex-row justify-center">
 		<h1 class="h1 flex items-center">

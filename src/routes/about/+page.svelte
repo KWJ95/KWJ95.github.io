@@ -23,6 +23,11 @@
 	}
 </script>
 
+<svelte:head>
+  <title>About me</title>
+  <meta name="about me page" content="Page owner general description for talents, skills, education level and interests." />
+</svelte:head>
+
 <div class="container mx-auto mt-8">
 	<h1
 		class="h1 bg-gradient-to-br from-blue-500 to-cyan-300 bg-clip-text text-transparent box-decoration-clone"

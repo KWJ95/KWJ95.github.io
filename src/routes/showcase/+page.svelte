@@ -29,6 +29,11 @@
 	// };
 </script>
 
+<svelte:head>
+  <title>Showcase</title>
+  <meta name="showcase page" content="Page owner's frontend design and photography gallery." />
+</svelte:head>
+
 <!-- <h1>The time is {formatter.format($time)}</h1> -->
 <div class="container mx-auto mt-8">
 	<div class="table-container w-[50%]">
