@@ -50,7 +50,7 @@
 					<!-- svelte-ignore a11y-click-events-have-key-events -->
 					<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 					<img
-						class="h-auto max-w-full rounded-lg"
+						class="h-auto max-w-full rounded-lg shadow-md"
 						src="https://images.unsplash.com/photo-{i}&w=300&h=300&auto=format&fit=max"
 						alt=""
 						in:fade|global={{ delay: getRandomNumber(), duration: getRandomNumber() }}

@@ -30,7 +30,7 @@
 
 <div class="container mx-auto mt-8">
 	<h1
-		class="h1 bg-gradient-to-br from-blue-500 to-cyan-300 bg-clip-text text-transparent box-decoration-clone"
+		class="h1 bg-gradient-to-br from-pink-500 to-yellow-400 dark:from-blue-500 dark:to-cyan-300 bg-clip-text text-transparent box-decoration-clone"
 		in:typewriter|local
 	>
 		About me
@@ -39,11 +39,11 @@
 		A brief introduction about myself regarding education level, interests and skill sets.
 	</p>
 
-	<div class="card w-fit" in:fade|local>
+	<div class="card variant-soft-error shadow-lg w-fit" in:fade|local>
 		<header class="card-header">
 			<h4 class="h4">Technical skills</h4>
 		</header>
-		<hr />
+		<hr class="bg-inherit"/>
 		<p class="list p-4">
 			{#each data.skills as { talent, remark, variant }}
 				<!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -60,11 +60,11 @@
 	</ul> -->
 	</div>
 	<hr class="mx-5 my-8" />
-	<div class="card w-fit" in:fade|local={{ delay: 250 }}>
+	<div class="card variant-glass-surface shadow-lg w-fit" in:fade|local={{ delay: 250 }}>
 		<header class="card-header">
 			<h4 class="h4">Education</h4>
 		</header>
-		<hr />
+		<hr class="bg-inherit"/>
 		<dl class="list-dl p-4">
 			{#each data.educations as { school, year, programme, icon }}
 				<div>
@@ -72,7 +72,7 @@
 					<span class="flex-auto">
 						<dt class="font-bold">{school}</dt>
 						<dd class="font-normal italic">{programme}</dd>
-						<dd class="text-slate-500">{year}</dd>
+						<dd class="text-slate-500 dark:text-slate-200">{year}</dd>
 					</span>
 				</div>
 				<!-- <li>{school} ({year})</li> -->
@@ -80,17 +80,17 @@
 		</dl>
 	</div>
 	<hr class="mx-5 my-8" />
-	<div class="card w-fit" in:fade|local={{ delay: 300 }}>
+	<div class="card variant-glass-primary shadow-lg w-fit" in:fade|local={{ delay: 300 }}>
 		<header class="card-header">
 			<h4 class="h4">Hobbies and Interests</h4>
 		</header>
-		<hr />
+		<hr class="bg-inherit"/>
 		<dl class="list-dl p-4">
 			{#each data.hobbies as { act, desc, icon }}
 				<div>
 					<span class="flex-auto">
 						<dt>{act} {@html icon}</dt>
-						<dd class="text-slate-500">{desc}</dd>
+						<dd class="text-slate-500 dark:text-slate-200">{desc}</dd>
 					</span>
 				</div>
 			{/each}

@@ -5,7 +5,7 @@
 <div class="container">
 	Flip the card
 	<button
-		class="card"
+		class="card shadow-2xl"
 		class:flipped={flipped}
 		on:click={() => flipped = !flipped}
 	>

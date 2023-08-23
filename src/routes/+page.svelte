@@ -20,11 +20,11 @@
 		<h1 class="h1 flex items-center">
 			Hi, my name is&nbsp;
 			<span
-				class="bg-gradient-to-br from-blue-500 to-cyan-300 bg-clip-text text-transparent box-decoration-clone"
+				class="bg-gradient-to-br from-pink-500 to-yellow-400 dark:from-blue-500 dark:to-cyan-300 bg-clip-text text-transparent box-decoration-clone"
 				>Jack Koo</span
 			>
 		</h1>
-		<span class="divider-vertical invisible md:h-32 md:visible" />
+		<span class="!border-l-2 divider-vertical invisible md:h-32 md:visible" />
 		<div class="grow md:grow-0 grid justify-center">
 			<Avatar src="#" initials="KWJ" width="w-32" rounded="rounded-full" />
 		</div>
@@ -43,12 +43,12 @@
 		href="/docs/my_resume(CV).docx"
 		download="Koo_Wei_Jie_CV"
 		type="button"
-		class="btn btn-lg variant-filled my-5"
+		class="btn btn-lg variant-filled my-5 shadow-md"
 	>
 		Get my CV
 	</a>
 
-	<div class="logo-cloud grid-cols-1 lg:!grid-cols-3 gap-0.5 my-3">
+	<div class="logo-cloud shadow-md grid-cols-1 lg:!grid-cols-3 gap-0.5 my-3">
 		{#each data.externalLinks as links}
 			<a class="logo-item variant-soft" href={links.src} target="_blank" rel="noreferrer">
 				<i class="{links.icon} text-2xl" />

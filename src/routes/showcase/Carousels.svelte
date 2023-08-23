@@ -30,9 +30,9 @@
 	}
 </script>
 
-<div class="card p-4 grid grid-cols-[auto_1fr_auto] gap-4 items-center">
+<div class="card p-4 grid grid-cols-[auto_1fr_auto] gap-4 items-center shadow-lg">
 	<!-- Button: Left -->
-	<button type="button" class="btn-icon variant-filled" on:click={carouselLeft} aria-label="left button">
+	<button type="button" class="btn-icon variant-filled shadow-md" on:click={carouselLeft} aria-label="left button">
 		<i class="fa-solid fa-arrow-left" aria-hidden="true"/>
 	</button>
 	<!-- Full Images -->
@@ -47,12 +47,12 @@
 		{/each}
 	</div>
 	<!-- Button: Right -->
-	<button type="button" class="btn-icon variant-filled" on:click={carouselRight} aria-label="right button">
+	<button type="button" class="btn-icon variant-filled shadow-md" on:click={carouselRight} aria-label="right button">
 		<i class="fa-solid fa-arrow-right" aria-hidden="true"/>
 	</button>
 </div>
 
-<div class="card my-3 p-4 grid grid-cols-6 gap-4">
+<div class="card my-3 p-4 grid grid-cols-6 gap-4 shadow-lg">
 	{#each unsplashIds as unsplashId, i}
 		<button type="button" on:click={() => carouselThumbnail(i)}>
 			<img
