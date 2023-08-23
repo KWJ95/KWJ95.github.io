@@ -27,55 +27,55 @@ export const skillsets = [
         talent: 'PHP',
         exp: '16',
         remark: 'language',
-        color: 'error'
+        color: 'success'
     },
     {
         talent: 'HTML',
         exp: '16',
         remark: 'language',
-        color: 'error'
+        color: 'success'
     },
     {
         talent: 'CSS',
         exp: '16',
         remark: 'language',
-        color: 'error'
+        color: 'success'
     },
     {
         talent: 'JQuery',
         exp: '16',
         remark: 'language',
-        color: 'error'
+        color: 'success'
     },
     {
         talent: 'JavaScript',
         exp: '16',
         remark: 'language',
-        color: 'error'
+        color: 'success'
     },
     {
         talent: 'JAVA',
         exp: '16',
         remark: 'language',
-        color: 'error'
+        color: 'success'
     },
     {
         talent: 'Python',
         exp: '8',
         remark: 'language',
-        color: 'error'
+        color: 'success'
     },
     {
         talent: 'C++',
         exp: '12',
         remark: 'language',
-        color: 'error'
+        color: 'success'
     },
     {
         talent: 'C#',
         exp: '12',
         remark: 'language',
-        color: 'error'
+        color: 'success'
     },
     {
         talent: 'Docker',
