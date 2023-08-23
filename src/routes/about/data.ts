@@ -93,34 +93,42 @@ export const skillsets = [
 export const hobbies = [
     {
         activity: 'Digital art',
+        icon: '<i class="fa-solid fa-paintbrush"></i>',
         description: 'Drawing since young, now often sketch and practice art on numerous subjects',
     },
     {
         activity: 'Photography',
+        icon: '<i class="fa-solid fa-camera"></i>',
         description: 'Recently bought a mirrorless camera, prefer street photography',
     },
     {
         activity: 'Video editing',
+        icon: '<i class="fa-solid fa-file-video"></i>',
         description: 'Lightly editing videos for fun',
     },
     {
         activity: 'Swimming',
+        icon: '<i class="fa-solid fa-person-swimming"></i>',
         description: 'Numerous swimming techniques such as breast stroke, free style, back stroke and butterfly stroke',
     },
     {
-        activity: 'Badminton',
-        description: 'Casually plays badminton',
+        activity: 'Biking',
+        icon: '<i class="fa-solid fa-person-biking"></i>',
+        description: 'Casually bikes when have free time',
     },
     {
         activity: 'Guitar',
+        icon: '<i class="fa-solid fa-guitar"></i>',
         description: 'Not that active into playing acoustic guitar anymore',
     },
     {
         activity: 'Video games',
+        icon: '<i class="fa-solid fa-gamepad"></i>',
         description: 'Playing PC games since early teenage',
     },
     {
         activity: 'Music listening',
+        icon: '<i class="fa-solid fa-headphones"></i>',
         description: 'Collecting personal audio gear for 4 years',
     },
 ]

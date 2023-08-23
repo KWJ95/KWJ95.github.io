@@ -9,11 +9,14 @@ export function load() {
         })),
         educations: lists.map((list) => ({
             school: list.school,
-            year: list.year
+            year: list.year,
+            programme: list.programme,
+            icon: list.icon
         })),
         hobbies: hobbies.map((h) => ({
             act: h.activity,
-            desc: h.description
+            desc: h.description,
+            icon: h.icon
         }))
     };
 }

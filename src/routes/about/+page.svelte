@@ -40,7 +40,9 @@
 	</p>
 
 	<div class="card w-fit" in:fade|local>
-		<header class="card-header">Below are my technical skills</header>
+		<header class="card-header">
+			<h4 class="h4">Technical skills</h4>
+		</header>
 		<hr />
 		<p class="list p-4">
 			{#each data.skills as { talent, remark }}
@@ -59,23 +61,35 @@
 	</div>
 	<hr class="mx-5 my-8" />
 	<div class="card w-fit" in:fade|local={{ delay: 250 }}>
-		<header class="card-header">Here are my education level history</header>
+		<header class="card-header">
+			<h4 class="h4">Education</h4>
+		</header>
 		<hr />
-		<ul class="list p-4">
-			{#each data.educations as { school, year }}
-				<li>{school} ({year})</li>
+		<dl class="list-dl p-4">
+			{#each data.educations as { school, year, programme, icon }}
+				<div>
+					<img class="object-scale-down w-0 invisible md:w-12 md:visible" src="{icon}" alt="{school}"/>
+					<span class="flex-auto">
+						<dt class="font-bold">{school}</dt>
+						<dd class="font-normal italic">{programme}</dd>
+						<dd class="text-slate-500">{year}</dd>
+					</span>
+				</div>
+				<!-- <li>{school} ({year})</li> -->
 			{/each}
-		</ul>
+		</dl>
 	</div>
 	<hr class="mx-5 my-8" />
 	<div class="card w-fit" in:fade|local={{ delay: 300 }}>
-		<header class="card-header">Here are the lists of my hobbies and interests</header>
+		<header class="card-header">
+			<h4 class="h4">Hobbies and Interests</h4>
+		</header>
 		<hr />
 		<dl class="list-dl p-4">
-			{#each data.hobbies as { act, desc }}
+			{#each data.hobbies as { act, desc, icon }}
 				<div>
 					<span class="flex-auto">
-						<dt>{act}</dt>
+						<dt>{act} {@html icon}</dt>
 						<dd class="text-slate-500">{desc}</dd>
 					</span>
 				</div>
