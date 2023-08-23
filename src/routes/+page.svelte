@@ -9,11 +9,6 @@
 	const yearElapsed = timeDiff / (1000 * 60 * 60 * 24 * 365.25);
 	const expYear = yearElapsed.toFixed(1);
 </script>
-<head>
-    <meta 
-        name="landing page"
-        content="Introduction to page owner and affiliate links."/>
-</head>
 
 <div class="container mx-auto mt-8">
 	<div class="flex flex-col-reverse md:flex-row justify-center">

@@ -29,12 +29,6 @@
 	// };
 </script>
 
-<head>
-    <meta 
-        name="showcase page"
-        content="Showcasing the frontend designs and photography gallery."/>
-</head>
-
 <!-- <h1>The time is {formatter.format($time)}</h1> -->
 <div class="container mx-auto mt-8">
 	<div class="table-container w-[50%]">
