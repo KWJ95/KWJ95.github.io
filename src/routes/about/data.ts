@@ -2,91 +2,133 @@ export const skillsets = [
     {
         talent: 'Svelte',
         exp: '3',
-        remark: 'front-end framework'
+        remark: 'front-end framework',
+        color: 'primary'
     },
     {
         talent: 'VueJS',
         exp: '2',
-        remark: 'front-end framework'
+        remark: 'front-end framework',
+        color: 'primary'
     },
     {
         talent: 'NextJS',
         exp: '4',
-        remark: 'front-end framework'
+        remark: 'front-end framework',
+        color: 'primary'
     },
     {
         talent: 'Angular',
         exp: '7',
-        remark: 'framework'
+        remark: 'framework',
+        color: 'primary'
     },
     {
         talent: 'PHP',
         exp: '16',
-        remark: 'language'
+        remark: 'language',
+        color: 'error'
+    },
+    {
+        talent: 'HTML',
+        exp: '16',
+        remark: 'language',
+        color: 'error'
+    },
+    {
+        talent: 'CSS',
+        exp: '16',
+        remark: 'language',
+        color: 'error'
+    },
+    {
+        talent: 'JQuery',
+        exp: '16',
+        remark: 'language',
+        color: 'error'
+    },
+    {
+        talent: 'JavaScript',
+        exp: '16',
+        remark: 'language',
+        color: 'error'
     },
     {
         talent: 'JAVA',
         exp: '16',
-        remark: 'language'
+        remark: 'language',
+        color: 'error'
     },
     {
         talent: 'Python',
         exp: '8',
-        remark: 'language'
+        remark: 'language',
+        color: 'error'
     },
     {
         talent: 'C++',
         exp: '12',
-        remark: 'language'
+        remark: 'language',
+        color: 'error'
     },
     {
         talent: 'C#',
         exp: '12',
-        remark: 'language'
+        remark: 'language',
+        color: 'error'
     },
     {
         talent: 'Docker',
         exp: '1',
-        remark: 'package'
+        remark: 'package',
+        color: 'secondary'
     },
     {
         talent: 'Git',
         exp: '1',
-        remark: 'version control'
+        remark: 'version control',
+        color: 'secondary'
     },
     {
         talent: 'Postman',
         exp: '4',
-        remark: 'API testing'
+        remark: 'API testing',
+        color: 'secondary'
     },
     {
         talent: 'Cypress',
         exp: '4',
-        remark: 'end-to-end testing'
+        remark: 'end-to-end testing',
+        color: 'secondary'
     },{
         talent: 'Playwright',
         exp: '4',
-        remark: 'end-to-end testing'
+        remark: 'end-to-end testing',
+        color: 'secondary'
     },
     {
         talent: 'MongoDB',
         exp: '4',
-        remark: 'document oriented database'
+        remark: 'document oriented database',
+        color: 'warning'
     },
     {
         talent: 'Pocketbase',
         exp: '4',
-        remark: 'open-source database'
+        remark: 'open-source database',
+        color: 'warning'
     },
     {
         talent: 'SQL',
         exp: '4',
-        remark: 'structure query languange (database)'
+        remark: 'structure query languange (database)',
+        color: 'warning'
     },
     {
         talent: 'Oracle',
         exp: '4',
-        remark: 'database design'
+        remark: 'database design',
+        color: 'warning'
     }
 ];
 
