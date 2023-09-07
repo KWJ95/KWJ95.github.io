@@ -24,6 +24,16 @@
 		]
 	];
 
+	const galleryImages = [
+		['DSCF0018.JPG', 'DSCF0022.JPG', 'DSCF0309.JPG'],
+		['DSCF0094.JPG', 'DSCF0103.JPG', 'DSCF0108.JPG'],
+		['DSCF0348.JPG', 'DSCF0024.JPG', 'DSCF0067.JPG'],
+		['DSCF0290.JPG', 'DSCF0033.JPG', 'DSCF0321.JPG'],
+		['DSCF0503.JPG', 'DSCF0483.JPG', 'DSCF0485.JPG']
+	]
+
+	const colNum = galleryImages.length < 13 ? galleryImages.length : 12;
+
 	function getRandomNumber() {
 		return Math.floor(Math.random() * (1000 - 200) + 200);
 	}
@@ -31,24 +41,47 @@
 	function modalImage(imgSrc: string): void {
 		const fullURL = "https://images.unsplash.com/photo-" + imgSrc + "&fit=max";
 		const resizeURL = "https://images.unsplash.com/photo-" + imgSrc + "&w=1097&auto=format&fit=max";
+		const src = "/pictures/" + imgSrc;
 		const modal: ModalSettings = {
 			type: 'confirm',
-			image: resizeURL,
+			image: src,
 			modalClasses: 'w-modal',
 			buttonTextConfirm: 'Open full size image',
-			response: (r:boolean) => {r ? window.open(fullURL, '_blank')?.focus() :console.log('modal close')}
+			response: (r:boolean) => {r ? window.open(src, '_blank')?.focus() :console.log('modal close')}
 		};
 		modalStore.trigger(modal);
 	}
 </script>
 
-<section class="grid grid-cols-2 md:grid-cols-4 gap-2">
-	{#each images as imageRows}
+<!-- <section class="grid grid-cols-2 md:grid-cols-5 gap-2"> -->
+<section class="grid grid-cols-2 md:grid-cols-{colNum} gap-2">
+	{#each galleryImages as imageRows}
 		<div class="grid gap-4">
 			{#each imageRows as i}
 				<div>
 					<!-- svelte-ignore a11y-click-events-have-key-events -->
 					<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+					<img
+						class="h-auto max-w-full rounded-lg shadow-md"
+						src="/pictures/{i}"
+						alt=""
+						in:fade|global={{ delay: getRandomNumber(), duration: getRandomNumber() }}
+						loading="lazy"
+						on:click={() => modalImage(i)}
+					/>
+				</div>
+			{/each}
+		</div>
+	{/each}
+</section>
+
+<!-- <section class="grid grid-cols-2 md:grid-cols-4 gap-2">
+	{#each images as imageRows}
+		<div class="grid gap-4">
+			{#each imageRows as i}
+				<div>
+					<--!-- svelte-ignore a11y-click-events-have-key-events ->
+					<--!-- svelte-ignore a11y-no-noninteractive-element-interactions ->
 					<img
 						class="h-auto max-w-full rounded-lg shadow-md"
 						src="https://images.unsplash.com/photo-{i}&w=300&h=300&auto=format&fit=max"
@@ -61,4 +94,4 @@
 			{/each}
 		</div>
 	{/each}
-</section>
+</section> -->
