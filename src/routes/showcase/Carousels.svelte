@@ -19,7 +19,7 @@
 		'DSCF0134.JPG',
 	];
 
-	const colNum = galleryIds.length < 12 ? galleryIds.length : 12;
+	const colNum = galleryIds.length < 13 ? galleryIds.length : 12;
 
 	function carouselLeft(): void {
 		const x =

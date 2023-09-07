@@ -25,11 +25,11 @@
 	];
 
 	const galleryImages = [
-		['DSCF0018.JPG', 'DSCF0022.JPG', 'DSCF0309.JPG'],
-		['DSCF0094.JPG', 'DSCF0103.JPG', 'DSCF0108.JPG'],
-		['DSCF0348.JPG', 'DSCF0024.JPG', 'DSCF0067.JPG'],
-		['DSCF0290.JPG', 'DSCF0033.JPG', 'DSCF0321.JPG'],
-		['DSCF0503.JPG', 'DSCF0483.JPG', 'DSCF0485.JPG']
+		['DSCF0018', 'DSCF0022', 'DSCF0309'],
+		['DSCF0094', 'DSCF0103', 'DSCF0108'],
+		['DSCF0348', 'DSCF0024', 'DSCF0067'],
+		['DSCF0483', 'DSCF0485', 'DSCF0503'],
+		['DSCF0290', 'DSCF0033', 'DSCF0321']
 	]
 
 	const colNum = galleryImages.length < 13 ? galleryImages.length : 12;
@@ -41,10 +41,11 @@
 	function modalImage(imgSrc: string): void {
 		const fullURL = "https://images.unsplash.com/photo-" + imgSrc + "&fit=max";
 		const resizeURL = "https://images.unsplash.com/photo-" + imgSrc + "&w=1097&auto=format&fit=max";
-		const src = "/pictures/" + imgSrc;
+		const src = "/pictures/" + imgSrc + ".JPG";
+		const resizeSrc = "/pictures/webp" + imgSrc + ".webp";
 		const modal: ModalSettings = {
 			type: 'confirm',
-			image: src,
+			image: src,	//todo: change to resizeSrc when conversion to webp is done
 			modalClasses: 'w-modal',
 			buttonTextConfirm: 'Open full size image',
 			response: (r:boolean) => {r ? window.open(src, '_blank')?.focus() :console.log('modal close')}
@@ -61,9 +62,10 @@
 				<div>
 					<!-- svelte-ignore a11y-click-events-have-key-events -->
 					<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+					<!-- src="/pictures/webp/{i}.webp" -->
 					<img
 						class="h-auto max-w-full rounded-lg shadow-md"
-						src="/pictures/{i}"
+						src="/pictures/{i}.JPG"
 						alt=""
 						in:fade|global={{ delay: getRandomNumber(), duration: getRandomNumber() }}
 						loading="lazy"
