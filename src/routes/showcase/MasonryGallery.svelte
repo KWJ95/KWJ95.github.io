@@ -65,7 +65,7 @@
 					<!-- src="/pictures/webp/{i}.webp" -->
 					<img
 						class="h-auto max-w-full rounded-lg shadow-md"
-						src="/pictures/{i}.JPG"
+						src="/pictures/small/{i}.jpg"
 						alt=""
 						in:fade|global={{ delay: getRandomNumber(), duration: getRandomNumber() }}
 						loading="lazy"

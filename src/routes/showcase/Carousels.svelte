@@ -52,7 +52,7 @@
 		{#each galleryIds as gId}
 			<img
 				class="snap-center w-[1024px] rounded-container-token"
-				src="/pictures/webp/{gId}.webp"
+				src="/pictures/small/{gId}.jpg"
 				alt={gId}
 				loading="lazy"
 				height="768"
