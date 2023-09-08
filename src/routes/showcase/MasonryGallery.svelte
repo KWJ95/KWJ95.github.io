@@ -42,7 +42,7 @@
 		const fullURL = "https://images.unsplash.com/photo-" + imgSrc + "&fit=max";
 		const resizeURL = "https://images.unsplash.com/photo-" + imgSrc + "&w=1097&auto=format&fit=max";
 		const src = "/pictures/" + imgSrc + ".JPG";
-		const resizeSrc = "/pictures/webp" + imgSrc + ".webp";
+		const resizeSrc = "/pictures/webp/" + imgSrc + ".webp";
 		const modal: ModalSettings = {
 			type: 'confirm',
 			image: resizeSrc,	//todo: change to resizeSrc when conversion to webp is done
