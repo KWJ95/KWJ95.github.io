@@ -10,13 +10,13 @@
 	];
 
 	const galleryIds = [
-		'DSCF0121.JPG',
-		'DSCF0126.JPG',
-		'DSCF0127.JPG',
-		'DSCF0128.JPG',
-		'DSCF0130.JPG',
-		'DSCF0132.JPG',
-		'DSCF0134.JPG',
+		'DSCF0121',
+		'DSCF0126',
+		'DSCF0127',
+		'DSCF0128',
+		'DSCF0130',
+		'DSCF0132',
+		'DSCF0134'
 	];
 
 	const colNum = galleryIds.length < 13 ? galleryIds.length : 12;
@@ -52,7 +52,7 @@
 		{#each galleryIds as gId}
 			<img
 				class="snap-center w-[1024px] rounded-container-token"
-				src="/pictures/{gId}"
+				src="/pictures/webp/{gId}.webp"
 				alt={gId}
 				loading="lazy"
 				height="768"
@@ -72,7 +72,7 @@
 		<button type="button" on:click={() => carouselThumbnail(i)}>
 			<img
 				class="rounded-container-token"
-				src="/pictures/{gId}"
+				src="/pictures/small/{gId}.jpg"
 				alt={gId}
 				loading="lazy"
 				height="256"

@@ -45,7 +45,7 @@
 		const resizeSrc = "/pictures/webp" + imgSrc + ".webp";
 		const modal: ModalSettings = {
 			type: 'confirm',
-			image: src,	//todo: change to resizeSrc when conversion to webp is done
+			image: resizeSrc,	//todo: change to resizeSrc when conversion to webp is done
 			modalClasses: 'w-modal',
 			buttonTextConfirm: 'Open full size image',
 			response: (r:boolean) => {r ? window.open(src, '_blank')?.focus() :console.log('modal close')}
