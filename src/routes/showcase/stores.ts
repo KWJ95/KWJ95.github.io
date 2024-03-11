@@ -10,6 +10,6 @@ export const time = readable(new Date(), function start(set) {
 	};
 });
 
-const start = new Date();
+const start: Date = new Date();
 
 export const elapsed = derived(time, ($time) => Math.round(($time - start) / 1000));

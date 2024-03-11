@@ -28,7 +28,7 @@
   <meta name="about me page" content="Page owner general description for talents, skills, education level and interests." />
 </svelte:head>
 
-<div class="container mx-auto mt-8">
+<div class="container mt-8 overflow-x-auto mx-auto">
 	<h1
 		class="h1 bg-gradient-to-br from-pink-500 to-yellow-400 dark:from-blue-500 dark:to-cyan-300 bg-clip-text text-transparent box-decoration-clone"
 		in:typewriter|local
@@ -41,7 +41,7 @@
 
 	<div class="card variant-soft-error shadow-lg w-fit" in:fade|local>
 		<header class="card-header">
-			<h4 class="h4">Technical skills</h4>
+			<h4 class="text-xl">Technical skills</h4>
 		</header>
 		<hr class="bg-inherit"/>
 		<p class="list p-4">
@@ -62,14 +62,14 @@
 	<hr class="mx-5 my-8" />
 	<div class="card variant-glass-surface shadow-lg w-fit" in:fade|local={{ delay: 250 }}>
 		<header class="card-header">
-			<h4 class="h4">Education</h4>
+			<h4 class="text-xl">Education</h4>
 		</header>
 		<hr class="bg-inherit"/>
-		<dl class="list-dl p-4">
+		<div class="flex flex-col p-4 gap-5">
 			{#each data.educations as { school, year, programme, icon }}
-				<div>
+				<div class="flex md:gap-4">
 					<img class="object-scale-down w-0 invisible md:w-12 md:visible" src="{icon}" alt="{school}"/>
-					<span class="flex-auto">
+					<span class="flex-auto text-wrap">
 						<dt class="font-bold">{school}</dt>
 						<dd class="font-normal italic">{programme}</dd>
 						<dd class="text-slate-500 dark:text-slate-200">{year}</dd>
@@ -77,24 +77,24 @@
 				</div>
 				<!-- <li>{school} ({year})</li> -->
 			{/each}
-		</dl>
+		</div>
 	</div>
 	<hr class="mx-5 my-8" />
 	<div class="card variant-glass-primary shadow-lg w-fit" in:fade|local={{ delay: 300 }}>
 		<header class="card-header">
-			<h4 class="h4">Hobbies and Interests</h4>
+			<h4 class="text-xl">Hobbies and Interests</h4>
 		</header>
 		<hr class="bg-inherit"/>
-		<dl class="list-dl p-4">
+		<div class="grid p-4 gap-5">
 			{#each data.hobbies as { act, desc, icon }}
-				<div>
-					<span class="flex-auto">
+				<div class="flex md:gap-4">
+					<span class="flex-auto text-wrap">
 						<dt>{act} {@html icon}</dt>
-						<dd class="text-slate-500 dark:text-slate-200">{desc}</dd>
+						<p class="text-slate-500 dark:text-slate-200">{desc}</p>
 					</span>
 				</div>
 			{/each}
-		</dl>
+		</div>
 	</div>
 	<hr class="mx-5 my-8" />
 </div>
