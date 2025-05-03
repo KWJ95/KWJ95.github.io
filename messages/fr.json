@@ -10,5 +10,10 @@
 	"err_inv_password": "Mot de passe invalide (min 6, max 255 caractères)",
 	"err_inv_password_short": "Mot de passe invalide",
 	"err_inv_user_pass": "Nom d'utilisateur ou mot de passe incorrect",
-	"err_std_msg": "Une erreur s'est produite"
+	"err_std_msg": "Une erreur s'est produite",
+	"user_id_statement": "Votre identifiant utilisateur est {userId}",
+	"sign_out": "se déconnecter",
+	"getLanguage": "Français",
+	"back_to": "Retour à",
+	"main_page": "page principale"
 }

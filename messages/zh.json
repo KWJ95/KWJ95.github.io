@@ -10,5 +10,10 @@
 	"err_inv_password": "密码无效（最少 6 个字符，最多 255 个字符）",
 	"err_inv_password_short": "密码无效",
 	"err_inv_user_pass": "用户名或密码不正确",
-	"err_std_msg": "发生了错误"
+	"err_std_msg": "发生了错误",
+	"user_id_statement": "您的用户 ID 是{userId}",
+	"sign_out": "登出",
+	"getLanguage": "中文",
+	"back_to": "返回",
+	"main_page": "主页"
 }

@@ -10,5 +10,10 @@
 	"err_inv_password": "Kata laluan tidak sah (min 6, maks 255 aksara)",
 	"err_inv_password_short": "Kata laluan tidak sah",
 	"err_inv_user_pass": "Nama pengguna atau kata laluan yang salah",
-	"err_std_msg": "Ralat telah berlaku"
+	"err_std_msg": "Ralat telah berlaku",
+	"user_id_statement": "ID pengguna anda ialah {userId}",
+	"sign_out": "Log keluar",
+	"getLanguage": "Bahasa Melayu",
+	"back_to": "Kembali ke",
+	"main_page": "halaman utama"
 }

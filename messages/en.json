@@ -10,5 +10,10 @@
 	"err_inv_password": "Invalid password (min 6, max 255 characters)",
 	"err_inv_password_short": "Invalid password",
 	"err_inv_user_pass": "Incorrect username or password",
-	"err_std_msg": "An error has occurred"
+	"err_std_msg": "An error has occurred",
+	"user_id_statement": "Your user ID is {userId}",
+	"sign_out": "Sign out",
+	"getLanguage": "Englush",
+	"back_to": "Back to",
+	"main_page": "main page"
 }

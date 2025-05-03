@@ -10,5 +10,10 @@
 	"err_inv_password": "Ungültiges Passwort (mindestens 6, maximal 255 Zeichen)",
 	"err_inv_password_short": "Ungültiges Passwort",
 	"err_inv_user_pass": "Falscher Benutzername oder falsches Passwort",
-	"err_std_msg": "Ein Fehler ist aufgetreten"
+	"err_std_msg": "Ein Fehler ist aufgetreten",
+	"user_id_statement": "Ihre Benutzer-ID ist {userId}",
+	"sign_out": "Abmelden",
+	"getLanguage": "Deutsch",
+	"back_to": "Zurück zu",
+	"main_page": "Hauptseite"
 }
