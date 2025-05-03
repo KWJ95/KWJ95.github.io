@@ -1,4 +1,14 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from fr!"
+	"hello_world": "Bonjour, {name} !",
+	"username": "Nom d'utilisateur",
+	"password": "Mot de passe",
+	"login": "Se connecter",
+	"register": "Registre",
+	"err_inv_username": "Nom d'utilisateur invalide (min 3, max 31 caractères, alphanumériques uniquement)",
+	"err_inv_username_short": "Nom d'utilisateur invalide",
+	"err_inv_password": "Mot de passe invalide (min 6, max 255 caractères)",
+	"err_inv_password_short": "Mot de passe invalide",
+	"err_inv_user_pass": "Nom d'utilisateur ou mot de passe incorrect",
+	"err_std_msg": "Une erreur s'est produite"
 }

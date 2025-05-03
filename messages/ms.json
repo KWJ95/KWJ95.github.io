@@ -1,4 +1,14 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from ms!"
+	"hello_world": "Helo, {name} !",
+	"username": "Nama pengguna",
+	"password": "Kata laluan",
+	"login": "Log masuk",
+	"register": "Daftar",
+	"err_inv_username": "Nama pengguna tidak sah (min 3, maks 31 aksara, abjad angka sahaja)",
+	"err_inv_username_short": "Nama pengguna tidak sah",
+	"err_inv_password": "Kata laluan tidak sah (min 6, maks 255 aksara)",
+	"err_inv_password_short": "Kata laluan tidak sah",
+	"err_inv_user_pass": "Nama pengguna atau kata laluan yang salah",
+	"err_std_msg": "Ralat telah berlaku"
 }

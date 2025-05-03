@@ -1,4 +1,14 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from es!"
+	"hello_world": "Hola, {name} !",
+	"username": "Nombre de usuario",
+	"password": "Contraseña",
+	"login": "Acceso",
+	"register": "Registro",
+	"err_inv_username": "Nombre de usuario no válido (mínimo 3, máximo 31 caracteres, solo alfanuméricos)",
+	"err_inv_username_short": "Nombre de usuario inválido",
+	"err_inv_password": "Contraseña no válida (mín. 6, máx. 255 caracteres)",
+	"err_inv_password_short": "Contraseña inválida",
+	"err_inv_user_pass": "Nombre de usuario o contraseña incorrectos",
+	"err_std_msg": "Se ha producido un error."
 }

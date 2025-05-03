@@ -6,6 +6,7 @@ import * as auth from '$lib/server/auth';
 import { db } from '$lib/server/db';
 import * as table from '$lib/server/db/schema';
 import type { Actions, PageServerLoad } from './$types';
+import { m } from '$lib/paraglide/messages.js';
 
 export const load: PageServerLoad = async (event) => {
 	if (event.locals.user) {
@@ -22,18 +23,18 @@ export const actions: Actions = {
 
 		if (!validateUsername(username)) {
 			return fail(400, {
-				message: 'Invalid username (min 3, max 31 characters, alphanumeric only)'
+				message: m.err_inv_username()
 			});
 		}
 		if (!validatePassword(password)) {
-			return fail(400, { message: 'Invalid password (min 6, max 255 characters)' });
+			return fail(400, { message: m.err_inv_password() });
 		}
 
 		const results = await db.select().from(table.user).where(eq(table.user.username, username));
 
 		const existingUser = results.at(0);
 		if (!existingUser) {
-			return fail(400, { message: 'Incorrect username or password' });
+			return fail(400, { message: m.err_inv_user_pass() });
 		}
 
 		const validPassword = await verify(existingUser.passwordHash, password, {
@@ -43,7 +44,7 @@ export const actions: Actions = {
 			parallelism: 1
 		});
 		if (!validPassword) {
-			return fail(400, { message: 'Incorrect username or password' });
+			return fail(400, { message: m.err_inv_password() });
 		}
 
 		const sessionToken = auth.generateSessionToken();
@@ -58,10 +59,10 @@ export const actions: Actions = {
 		const password = formData.get('password');
 
 		if (!validateUsername(username)) {
-			return fail(400, { message: 'Invalid username' });
+			return fail(400, { message: m.err_inv_username_short() });
 		}
 		if (!validatePassword(password)) {
-			return fail(400, { message: 'Invalid password' });
+			return fail(400, { message: m.err_inv_password_short() });
 		}
 
 		const userId = generateUserId();
@@ -80,7 +81,7 @@ export const actions: Actions = {
 			const session = await auth.createSession(sessionToken, userId);
 			auth.setSessionTokenCookie(event, sessionToken, session.expiresAt);
 		} catch (e) {
-			return fail(500, { message: 'An error has occurred' });
+			return fail(500, { message: m.err_std_msg() });
 		}
 		return redirect(302, '/demo/lucia');
 	}

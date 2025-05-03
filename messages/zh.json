@@ -1,4 +1,14 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from zh!"
+	"hello_world": "你好， {name} ！",
+	"username": "用户名",
+	"password": "密码",
+	"login": "登录",
+	"register": "登记",
+	"err_inv_username": "用户名无效（最少 3 个字符，最多 31 个字符，仅限字母数字）",
+	"err_inv_username_short": "用户名无效",
+	"err_inv_password": "密码无效（最少 6 个字符，最多 255 个字符）",
+	"err_inv_password_short": "密码无效",
+	"err_inv_user_pass": "用户名或密码不正确",
+	"err_std_msg": "发生了错误"
 }
