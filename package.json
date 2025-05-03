@@ -12,12 +12,12 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
-		"test": "npm run test:unit -- --run && npm run test:e2e",
-		"test:e2e": "playwright test",
+		"test": "dotenv -e npm install --save-dev dotenv-cli.env.test -- npm run test:unit -- --run && npm run test:e2e",
+		"test:e2e": "dotenv -e .env.test -- playwright test",
 		"db:push": "drizzle-kit push",
 		"db:migrate": "drizzle-kit migrate",
 		"db:studio": "drizzle-kit studio",
-		"machine translate": "npx @inlang/cli machine translate --project ./project.inlang"
+		"inlang:translate": "npx @inlang/cli machine translate --project ./project.inlang"
 	},
 	"files": [
 		"dist",
@@ -43,7 +43,7 @@
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",
 		"@playwright/test": "^1.49.1",
-		"@sveltejs/adapter-static": "^3.0.8",
+		"@sveltejs/adapter-auto": "^3.0.8",
 		"@sveltejs/kit": "^2.16.0",
 		"@sveltejs/package": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
