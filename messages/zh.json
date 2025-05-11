@@ -15,5 +15,7 @@
 	"sign_out": "登出",
 	"getLanguage": "中文",
 	"back_to": "返回",
-	"main_page": "主页"
+	"main_page": "主页",
+	"return_to": "返回",
+	"login_page": "登录页面"
 }

@@ -10,5 +10,12 @@
 	"err_inv_password": "Contraseña no válida (mín. 6, máx. 255 caracteres)",
 	"err_inv_password_short": "Contraseña inválida",
 	"err_inv_user_pass": "Nombre de usuario o contraseña incorrectos",
-	"err_std_msg": "Se ha producido un error."
+	"err_std_msg": "Se ha producido un error.",
+	"user_id_statement": "Su ID de usuario es {userId}",
+	"sign_out": "desconectar",
+	"getLanguage": "Inglés",
+	"back_to": "Volver a",
+	"main_page": "página principal",
+	"return_to": "Regresar a",
+	"login_page": "Página de inicio de sesión"
 }

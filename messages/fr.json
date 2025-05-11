@@ -15,5 +15,7 @@
 	"sign_out": "se déconnecter",
 	"getLanguage": "Français",
 	"back_to": "Retour à",
-	"main_page": "page principale"
+	"main_page": "page principale",
+	"return_to": "Retour à",
+	"login_page": "Page de connexion"
 }

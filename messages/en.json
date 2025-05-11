@@ -13,7 +13,9 @@
 	"err_std_msg": "An error has occurred",
 	"user_id_statement": "Your user ID is {userId}",
 	"sign_out": "Sign out",
-	"getLanguage": "Englush",
+	"getLanguage": "English",
 	"back_to": "Back to",
-	"main_page": "main page"
+	"main_page": "main page",
+	"return_to": "Return to",
+	"login_page": "Login page"
 }

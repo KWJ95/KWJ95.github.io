@@ -15,5 +15,7 @@
 	"sign_out": "Abmelden",
 	"getLanguage": "Deutsch",
 	"back_to": "Zurück zu",
-	"main_page": "Hauptseite"
+	"main_page": "Hauptseite",
+	"return_to": "Zurück zu",
+	"login_page": "Anmeldeseite"
 }

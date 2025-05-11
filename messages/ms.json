@@ -15,5 +15,7 @@
 	"sign_out": "Log keluar",
 	"getLanguage": "Bahasa Melayu",
 	"back_to": "Kembali ke",
-	"main_page": "halaman utama"
+	"main_page": "halaman utama",
+	"return_to": "Kembali ke",
+	"login_page": "Halaman log masuk"
 }
