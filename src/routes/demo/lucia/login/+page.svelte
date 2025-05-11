@@ -6,70 +6,68 @@
 	let { form }: { form: ActionData } = $props();
 </script>
 
-<div class="flex items-center justify-center min-h-screen bg-gradient-to-br from-indigo-50 to-purple-50 px-4">
-	<div class="bg-white p-8 rounded-xl shadow-lg max-w-md w-full border border-indigo-100">
-		<h1 class="text-2xl font-bold mb-6 text-center text-indigo-600">
-			{m.login()}<span class="text-gray-400 mx-2">/</span>{m.register()}
+<div
+	class="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-50 to-purple-50 px-4"
+>
+	<div class="w-full max-w-md rounded-xl border border-indigo-100 bg-white p-8 shadow-lg">
+		<h1 class="mb-6 text-center text-2xl font-bold text-indigo-600">
+			{m.login()}<span class="mx-2 text-gray-400">/</span>{m.register()}
 		</h1>
-		
+
 		<form method="post" action="?/login" use:enhance class="space-y-5">
 			<div>
-				<label for="username" class="block text-gray-700 text-sm font-medium mb-2">
+				<label for="username" class="mb-2 block text-sm font-medium text-gray-700">
 					{m.username()}
 				</label>
 				<input
 					type="text"
 					id="username"
 					name="username"
-					class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 
-					       focus:border-indigo-500 text-gray-700 transition-all duration-200"
+					class="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-700 transition-all
+					       duration-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500"
 					placeholder="Enter your username"
 				/>
 			</div>
-			
+
 			<div>
-				<label for="password" class="block text-gray-700 text-sm font-medium mb-2">
+				<label for="password" class="mb-2 block text-sm font-medium text-gray-700">
 					{m.password()}
 				</label>
 				<input
 					type="password"
 					id="password"
 					name="password"
-					class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 
-					       focus:border-indigo-500 text-gray-700 transition-all duration-200"
+					class="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-700 transition-all
+					       duration-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500"
 					placeholder="Enter your password"
 				/>
 			</div>
-			
+
 			<div class="flex items-center justify-between space-x-4 pt-2">
 				<button
-					class="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-4 rounded-lg
-					       transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 
-					       focus:ring-offset-2 hover:shadow-md"
+					class="flex-1 btn-primary"
 					type="submit"
 				>
 					{m.login()}
 				</button>
 				<button
 					formaction="?/register"
-					class="flex-1 bg-white border border-indigo-600 text-indigo-600 hover:bg-indigo-50 
-					       font-medium py-3 px-4 rounded-lg transition-all duration-200 focus:outline-none 
-					       focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+					class="btn-secondary flex-1"
 				>
 					{m.register()}
 				</button>
 			</div>
 		</form>
-		
+
 		{#if form?.message}
-			<div class="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg">
-				<p class="text-red-600 text-sm text-center">{form.message}</p>
+			<div class="mt-4 rounded-lg border border-red-200 bg-red-50 p-3">
+				<p class="text-center text-sm text-red-600">{form.message}</p>
 			</div>
 		{/if}
-		
-		<div class="mt-6 pt-4 border-t border-gray-100 text-center">
-			<a href="/" class="text-indigo-500 hover:text-indigo-700 text-sm transition-colors">
-				Back to main page
+
+		<div class="mt-6 border-t border-gray-100 pt-4 text-center">
+			<a href="/" class="text-sm text-indigo-500 transition-colors hover:text-indigo-700">
+				{m.back_to() + ' ' + m.main_page()}
 			</a>
 		</div>
 	</div>
